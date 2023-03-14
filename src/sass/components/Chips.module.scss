@@ -37,3 +37,19 @@
     background-color: $very-dark-cyan;
   }
 }
+.perk-chip{
+  padding: .5em 1em;
+  margin: .5em;
+  margin-left: 0;
+  border: 1px solid transparent;
+  background-color: $light-grayish-cyan;
+  color: $dark-cyan;
+  font-weight: $bold;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover, &:active, &__active{
+    color: $light-grayish-cyan;
+    background-color: $dark-cyan;
+  }
+
+}

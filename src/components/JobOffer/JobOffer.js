@@ -1,5 +1,6 @@
 import classes from "../../sass/components/JobOffer.module.scss";
 import InfoChip from "./InfoChip";
+import PerkChip from "./PerkChip";
 
 const JobOffer = ({imageSrc}) => {
   return(
@@ -14,7 +15,11 @@ const JobOffer = ({imageSrc}) => {
           </div>
           <hr/>
           <div className={classes.offer__chips}>
-
+            <PerkChip>CSS</PerkChip>
+              <PerkChip>React</PerkChip>
+              <PerkChip>Next</PerkChip>
+              <PerkChip>Sass</PerkChip>
+              <PerkChip>RWD</PerkChip>
           </div>
       </div>
   )

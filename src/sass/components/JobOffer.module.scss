@@ -15,12 +15,16 @@
     }
   }
   &__title{
-
+    margin: .6em 0;
+    font-weight: $bold;
   }
   &__info{
-
+    display: flex;
+    color: $dark-grayish-cyan;
   }
   &__chips{
-
+    display: flex;
+    flex-wrap: wrap;
+    padding: .75em 0;
   }
 }

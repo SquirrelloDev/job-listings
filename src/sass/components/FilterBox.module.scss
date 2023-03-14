@@ -1,0 +1,33 @@
+@use '../utils' as *;
+.filter{
+  &__container{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgb(0,0,0,0.3);
+    &__chips{
+      display: flex;
+      flex-wrap: wrap;
+      padding: .3em;
+    }
+    &__clear{
+      //padding: .3em;
+      color: $dark-grayish-cyan;
+      font-weight: $bold;
+      transition: color .3s, text-decoration .3s;
+      cursor: pointer;
+      &:hover{
+        color: $dark-cyan;
+        text-decoration: underline;
+      }
+    }
+  }
+}

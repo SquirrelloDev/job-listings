@@ -8,6 +8,6 @@ html
 body {
   position: relative;
   min-height: 100vh;
-  font-size: $family;
-
+  font-size: $standard;
+  font-family: $family;
 }

@@ -1,0 +1,11 @@
+@use '../utils' as *;
+.header{
+  position: relative;
+  min-height: 25vh;
+  background-image: url('../../images/bg-header-mobile.svg');
+  background-color: $dark-cyan;
+  background-size: cover;
+  @include respond-to('l'){
+    background-image: url('../../images/bg-header-desktop.svg');
+  }
+}

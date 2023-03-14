@@ -1,0 +1,13 @@
+@use '../utils' as *;
+
+html
+{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  font-size: $family;
+
+}

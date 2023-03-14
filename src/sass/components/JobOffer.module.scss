@@ -2,8 +2,16 @@
 .offer{
   margin: 1em 0;
   padding: 1.5em;
+  position: relative;
   border-radius: 4px;
   background-color: #fff;
+  &__photo{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+  }
   &__company{
     margin: .6em 0;
     display: flex;

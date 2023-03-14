@@ -1,11 +1,11 @@
 import classes from "../../sass/components/JobOffer.module.scss";
 import InfoChip from "./InfoChip";
 import PerkChip from "./PerkChip";
-
+import testImg from '../../images/insure.svg'
 const JobOffer = ({imageSrc}) => {
   return(
       <div className={classes.offer}>
-          <img src={imageSrc} alt={'Company'}/>
+          <img src={testImg} className={classes.offer__photo} alt={'Company'}/>
           <div className={classes.offer__company}><p>Photosnap</p> <InfoChip type={'new'}/></div>
           <div className={classes.offer__title}><p>Senior Developer</p></div>
           <div className={classes.offer__info}>

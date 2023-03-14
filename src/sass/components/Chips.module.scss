@@ -2,7 +2,7 @@
 .chip{
   display: flex;
   align-items: center;
-  margin: 0 .4em;
+  margin: .4em;
   background-color: $light-grayish-cyan-filter;
   border-radius: 4px;
   &__title{
@@ -24,5 +24,16 @@
     &:hover{
       background-color: $very-dark-cyan;
     }
+  }
+}
+.info-chip{
+  color: #ffffff;
+  border-radius: 15px;
+  padding: .4em;
+  &--new{
+    background-color: $dark-cyan;
+  }
+  &--featured{
+    background-color: $very-dark-cyan;
   }
 }

@@ -1,4 +1,4 @@
-import classes from "../sass/components/Chip.module.scss";
+import classes from "../sass/components/Chips.module.scss";
 
 const Chip = ({children}) => {
   return(

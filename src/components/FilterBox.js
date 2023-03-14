@@ -8,6 +8,7 @@ const FilterBox = () => {
               {/*  TODO: Here will be the chip components*/}
               <Chip>Frontend</Chip>
               <Chip>CSS</Chip>
+              <Chip>JavaScript</Chip>
           </div>
             <div className={classes.filter__container__clear}>
                 <p>Clear</p>

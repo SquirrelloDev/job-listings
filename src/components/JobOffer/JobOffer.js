@@ -32,7 +32,7 @@ const JobOffer = ({jobData}) => {
           <div className={classes.offer__chips}>
             <PerkChip>{role}</PerkChip>
               <PerkChip>{level}</PerkChip>
-              {perks.map(perk => <PerkChip>{perk}</PerkChip>)}
+              {perks.map(perk => <PerkChip key={perk}>{perk}</PerkChip>)}
           </div>
       </div>
   )

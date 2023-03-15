@@ -3,7 +3,7 @@ import Chip from "./Chip";
 import {useContext} from "react";
 import filtersContext from "../context/filters-context";
 
-const FilterBox = () => {
+const FilterBox = ({filters}) => {
     const filterCtx = useContext(filtersContext);
   return (
       <div className={classes.filter__container}>

@@ -1,22 +1,52 @@
 @use "../utils" as *;
 .offer{
-  margin: 1em 0;
+  margin: 1.5em 0;
   padding: 1.5em;
   position: relative;
+  width: 90%;
+  max-width: 1200px;
   border-radius: 4px;
   background-color: #fff;
+  @include respond-to('m'){
+    display: flex;
+    justify-content: space-between;
+  }
+  &__job{
+    @include respond-to('m'){
+      display: flex;
+    }
+    &__details{
+      @include respond-to('m'){
+        margin-left: 1em;
+      }
+    }
+  }
   &__photo{
     position: absolute;
     top: 0;
-    left: 15%;
+    left: 50px;
     transform: translate(-50%, -50%);
-    width: 15%;
+    width: 50px;
+
+    @include respond-to('m'){
+      position: relative;
+      left: 10%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 70px;
+    }
+    @include respond-to('l'){
+      //left: 10%;
+    }
   }
   &__company{
     margin: .6em 0;
     display: flex;
     align-items: center;
     color: $dark-cyan;
+    @include respond-to('m'){
+      margin-top: 0;
+    }
     & > p{
       margin-right: 1em;
       font-weight: $bold;
@@ -28,7 +58,19 @@
   }
   &__info{
     display: flex;
+    align-items: center;
     color: $dark-grayish-cyan;
+    &__dot{
+      margin: 0 1em;
+      font-size: .5rem;
+      align-self: center;
+    }
+  }
+  hr{
+    margin-top: 1em;
+    @include respond-to('m'){
+      display: none;
+    }
   }
   &__chips{
     display: flex;

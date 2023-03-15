@@ -27,9 +27,11 @@
   }
 }
 .info-chip{
+  margin: 0 .25em;
+  padding: .4em;
   color: #ffffff;
   border-radius: 15px;
-  padding: .4em;
+
   &--new{
     background-color: $dark-cyan;
   }
@@ -46,6 +48,7 @@
   color: $dark-cyan;
   font-weight: $bold;
   border-radius: 4px;
+  transition: background-color .3s, color .3s;
   cursor: pointer;
   &:hover, &:active, &__active{
     color: $light-grayish-cyan;

@@ -6,8 +6,7 @@ const JobOffers = () => {
     const {fileData} = useFileData('./data.json');
   return(
       <div className={classes.jobs}>
-          <JobOffer/>
-          <JobOffer/>
+          {fileData.map(jobData => <JobOffer key={jobData.id} jobData={jobData}/> )}
       </div>
 
   )

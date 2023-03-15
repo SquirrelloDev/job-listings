@@ -6,7 +6,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircle} from "@fortawesome/free-solid-svg-icons";
 const JobOffer = ({imageSrc}) => {
   return(
-      <div className={classes.offer}>
+      <div className={`${classes.offer} ${classes.featured}`}>
           <div className={classes.offer__job}>
           <img src={testImg} className={classes.offer__photo} alt={'Company'}/>
               <div className={classes.offer__job__details}>

@@ -10,6 +10,7 @@
   @include respond-to('m'){
     display: flex;
     justify-content: space-between;
+    margin: .75em 0;
   }
   &__job{
     @include respond-to('m'){
@@ -76,5 +77,11 @@
     display: flex;
     flex-wrap: wrap;
     padding: .75em 0;
+    @include respond-to('m'){
+      margin-left: 1em;
+    }
   }
+}
+.featured{
+  border-left: 4px solid $dark-cyan;
 }

@@ -20,9 +20,11 @@
       padding: .3em;
     }
     &__clear{
-      //padding: .3em;
+      padding: .3em;
       color: $dark-grayish-cyan;
       font-weight: $bold;
+      background: none;
+      border: none;
       transition: color .3s, text-decoration .3s;
       cursor: pointer;
       &:hover{
